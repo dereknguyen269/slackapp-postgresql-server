@@ -1,0 +1,4 @@
+# Ignore local config ENV
+config/application.yml
+
+/log/*
