@@ -10,7 +10,7 @@ namespace :docker do
   desc "docker start postgres server"
   task :start do
     on roles(:app) do
-      execute "cd #{current_path} && docker run -d --rm -P --name #{fetch(:application)}_#{fetch(:stage)} eg_postgresql"
+      execute "cd #{current_path} && docker run -d -P --name #{fetch(:application)}_#{fetch(:stage)} eg_postgresql"
     end
   end
 
