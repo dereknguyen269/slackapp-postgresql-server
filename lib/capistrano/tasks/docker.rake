@@ -21,6 +21,13 @@ namespace :docker do
     end
   end
 
+  desc "docker ps"
+  task :ps do
+    on roles(:app) do
+      execute "cd #{current_path} && docker ps"
+    end
+  end
+
   desc "docker access postgres server"
   task :postgres do
     on roles(:app) do
