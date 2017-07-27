@@ -3,3 +3,7 @@ REPO_URL: git@github.com:minhquan4080/slackapp-postgresql-server.git
 SERVER_IP:
 SERVER_DOMAIN:
 DEPLOY_USER:
+DB_USER:
+DB_PASS:
+IMAGE_TAG:
+PORT: '5432:5432'
