@@ -47,4 +47,6 @@ docker stop image-name
 
 ## Custom
 
+Read at Wiki [Custom config with Dockerfile](https://github.com/minhquan4080/slackapp-postgresql-server/wiki/Custom-config-with-Dockerfile)
+
 Look Good! Now, you can use it to hosting dabase for your application :smile:.
