@@ -8,13 +8,7 @@
 
 Youn setup `PostgresSQL server with Docker` step by step with resource: [Dockerize PostgreSQL](https://docs.docker.com/engine/examples/postgresql_service/).
 
-## Other
-
-**Stop docker image:**
-
-```
-docker stop image-name
-```
+After setup successfully.
 
 **Conection**
 
@@ -44,5 +38,13 @@ Type | Protocol | Port range | Source
 -----|----------|------------|-------
 Custom TCP Rule | TCP | 49157 | ::/0
 Custom TCP Rule | TCP | 49157 | 0.0.0.0/0
+
+**Stop docker image:**
+
+```
+docker stop image-name
+```
+
+## Custom
 
 Look Good! Now, you can use it to hosting dabase for your application :smile:.
