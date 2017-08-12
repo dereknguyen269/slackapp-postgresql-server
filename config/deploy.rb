@@ -42,6 +42,7 @@ set :ssh_options, {
 
 server ENV['SERVER_IP'], user: ENV['DEPLOY_USER'], roles: %w(app web db), :primary => true
 
-after :deploy, 'docker:remove'
-after :'docker:remove', 'docker:build'
+# after :deploy, 'docker:remove'
+# after :'docker:remove', 'docker:build'
+after :deploy, 'docker:build'
 after :'docker:build', 'docker:start'
